@@ -3,7 +3,7 @@ import {redacted} from './options/redacted';
 const config = {
   customLevels: levels,
   useOnlyCustomLevels: true,
-  level: process.env.MAIN_LOG_LEVEL || 'info',
+  level: process.env.LOG_LEVEL || 'details',
   transport: {
     targets: [
       {

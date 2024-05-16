@@ -1,5 +1,5 @@
-import {levels} from './options/levels';
-import {redacted} from './options/redacted';
+import {levels} from '../options/levels';
+import {redacted} from '../options/redacted';
 const errConfig = {
   customLevels: levels,
   useOnlyCustomLevel: true,

@@ -7,11 +7,12 @@ const levels = {
   notice: 50,
   event: 40,
   info: 30,
-  details: 25,
-  debug: 20,
-  trace: 10,
-  ping: 5,
-  meta: 1
+  details: 25,   
+  http: 20,
+  signal: 15,
+  debug: 10, 
+  meta: 5,
+  test: 1,
 };
 
 export { levels };

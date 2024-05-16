@@ -1,15 +1,15 @@
-import {levels} from './options/levels';
-import {redacted} from './options/redacted';
+import {levels} from '../options/levels';
+import {redacted} from '../options/redacted';
 
-const debConfig = {
+const httpConfig = {
   customLevels: levels,
   useOnlyCustomLevels: true,
-  level: process.env.DEBUG_LOG_LEVEL || 'meta',
+  level: process.env.HTTP_LOG_LEVEL || 'http',
   transport: {
     targets: [
      {
       target: "pino/file",
-      options: {destination: `~/logs/debug.log`}
+      options: {destination: `~/logs/http.log`}
      },
      {
       target: "pino-pretty",
@@ -21,4 +21,4 @@ const debConfig = {
   timestamp: () => `, "timestamp": ${new Date(Date.now()).toISOString}`,
 }
 
-export { debConfig };
+export { httpConfig };
